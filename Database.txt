@@ -1,0 +1,56 @@
+create database cloud;
+
+use cloud;
+
+
+CREATE TABLE IF NOT EXISTS `users` (
+ 
+	`userId` int(11) NOT NULL AUTO_INCREMENT,
+  
+	`userName` varchar(30) NOT NULL,
+  
+	`userEmail` varchar(60) NOT NULL,
+  
+	`userPass` varchar(255) NOT NULL,
+
+	`userSpace` int(11) NOT NULL,
+	PRIMARY KEY (`userId`),
+  
+	UNIQUE KEY `userEmail` (`userEmail`)
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `Payment` (
+ 
+	`payId` int(11) NOT NULL AUTO_INCREMENT,
+  
+	`holdersName` varchar(30) NOT NULL,
+  
+	`cardNumber` varchar(60) NOT NULL,
+  
+	`date` varchar(255) NOT NULL,
+
+	`price` int(11) NOT NULL,
+	`email` VARCHAR( 100 ) NOT NULL,
+	PRIMARY KEY (`payId`)  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+
+CREATE TABLE `image` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`file` VARCHAR( 100 ) NOT NULL ,
+`type` VARCHAR( 10 ) NOT NULL ,
+`size` INT NOT NULL,
+`email` VARCHAR( 100 ) NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE `upload` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`file` VARCHAR( 100 ) NOT NULL ,
+`type` VARCHAR( 10 ) NOT NULL ,
+`size` INT NOT NULL,
+`description` VARCHAR( 100 ) NOT NULL,
+`email` VARCHAR( 100 ) NOT NULL
+) ENGINE = MYISAM ;

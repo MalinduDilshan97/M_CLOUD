@@ -1,0 +1,34 @@
+h2{
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 50px;
+    font-weight: bold;
+    color: #e9ecef;
+
+}
+
+body{
+    background-image: url("../../images/server.jpg");
+}
+
+hr{
+    background-color: #d9edf7;
+}
+
+.input-group span{
+    color: rgb(120,30,179);
+}
+
+
+.form-group a{
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+.tt{
+    text-align: right;
+}
+
+.hold-transition.login-page{
+    background-image: url("../../images/server.jpg");
+}
